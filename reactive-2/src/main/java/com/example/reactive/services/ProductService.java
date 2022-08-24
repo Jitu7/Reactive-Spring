@@ -11,9 +11,9 @@ public class ProductService {
 
     public Flux<Product> products() {
 
-        var beer = new Product("Beer");
+        var water = new Product("Water");
         var chocolate = new Product("Chocolate");
-        return Flux.just(beer, chocolate)
+        return Flux.just(water, chocolate)
                 .delayElements(Duration.ofSeconds(5));
 
     }
