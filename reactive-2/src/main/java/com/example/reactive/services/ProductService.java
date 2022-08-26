@@ -13,7 +13,8 @@ public class ProductService {
 
         var water = new Product("Water");
         var chocolate = new Product("Chocolate");
-        return Flux.just(water, chocolate)
+        var iceCream = new Product("ice-cream");
+        return Flux.just(water, chocolate, iceCream)
                 .delayElements(Duration.ofSeconds(5));
 
     }
