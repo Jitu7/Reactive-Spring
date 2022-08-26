@@ -17,8 +17,9 @@ public class ProductService {
         var iceCream = new Product("ice-cream");
         var mobile = new Product("mobile");
         var pen = new Product("pen");
+        var pencil = new Product("pencil");
 
-        return Flux.just(water, chocolate, iceCream, cake, mobile)
+        return Flux.just(water, chocolate, iceCream, cake, mobile, pen, pencil)
                 .delayElements(Duration.ofSeconds(5));
 
     }
